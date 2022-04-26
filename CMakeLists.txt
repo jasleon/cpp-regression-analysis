@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-project("cpp-project-template" VERSION 1.0.0 LANGUAGES CXX)
+project(cpp-regression-analysis VERSION 1.0.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 
