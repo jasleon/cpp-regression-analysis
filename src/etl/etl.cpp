@@ -1,3 +1,5 @@
 #include "etl.hpp"
 
-int etl::add(int a, int b) { return a + b; }
+std::vector<std::vector<double>> etl::load_from_csv(std::istream &stream) {
+  return {};
+}
