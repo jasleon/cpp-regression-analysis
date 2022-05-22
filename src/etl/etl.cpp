@@ -23,5 +23,8 @@ std::vector<std::vector<double>> etl::load_from_csv(
 }
 
 std::vector<std::vector<double>> etl::load_from_csv(std::ifstream &stream) {
-  return {};
+  csv::CSVFormat format;
+  format.no_header();
+  csv::CSVReader reader(stream, format);
+  return load(reader);
 }
