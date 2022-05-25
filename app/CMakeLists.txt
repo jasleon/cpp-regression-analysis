@@ -6,3 +6,6 @@ add_executable(sciplot_ex sciplot_ex.cpp)
 add_executable(eigen_ex eigen_ex.cpp)
 add_executable(csv_ex csv_ex.cpp)
 target_link_libraries(csv_ex csv)
+
+add_executable(minimal minimal.cpp)
+target_link_libraries(minimal etl)
