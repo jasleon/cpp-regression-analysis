@@ -28,3 +28,8 @@ std::vector<std::vector<double>> etl::load_from_csv(std::ifstream &stream) {
   csv::CSVReader reader(stream, format);
   return load(reader);
 }
+
+Eigen::MatrixXd etl::convert_to_matrix(
+    std::vector<std::vector<double>> const &source) {
+  return Eigen::MatrixXd::Zero(source.size(), source[0].size());
+}
